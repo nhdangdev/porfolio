@@ -6,8 +6,6 @@ import NavLink from "./NavLink";
 import MenuOverPlay from "./MenuOverPlay";
 // import { Bar3Icon, XmarkIcon } from "@heroicons/react/24/solid";
 
-// import Image
-import Logo from "../../../public/images/logo.png";
 
 const navLinks = [
   {
@@ -28,13 +26,13 @@ const Navbar = () => {
   const [NavBarOpen, SetNavBarOpen] = useState(false);
 
   return (
-    <nav className="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-10 tw-bg-[#121212] tw-bg-opacity-10 0">
+    <nav className="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-10 tw-bg-[#121212] tw-bg-opacity-100">
       <div className="tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-mx-auto tw-px-4 tw-py-2">
         <Link
           href={"/"}
           className="tw-relative tw-text-2xl md:tw-text-5xl tw-text-white tw-font-semibold"
         >
-          <Image src={Logo} alt="logo-images" className=" tw-max-w-[100px]" />
+          <Image src='/images/logo.png' alt='logo image' width={120} height={80} />
         </Link>
         <div className="mobile-menu tw-block md:tw-hidden">
           {!NavBarOpen ? (
