@@ -1,9 +1,13 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 import MenuOverPlay from "./MenuOverPlay";
 // import { Bar3Icon, XmarkIcon } from "@heroicons/react/24/solid";
+
+// import Image
+import Logo from "../../../public/images/logo.png";
 
 const navLinks = [
   {
@@ -28,9 +32,9 @@ const Navbar = () => {
       <div className="tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-mx-auto tw-px-4 tw-py-2">
         <Link
           href={"/"}
-          className="tw-text-2xl md:tw-text-5xl tw-text-white tw-font-semibold"
+          className="tw-relative tw-text-2xl md:tw-text-5xl tw-text-white tw-font-semibold"
         >
-          LOGO
+          <Image src={Logo} alt="logo-images" className=" tw-max-w-[100px]" />
         </Link>
         <div className="mobile-menu tw-block md:tw-hidden">
           {!NavBarOpen ? (
