@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
+import MenuOverPlay from "./MenuOverPlay";
 // import { Bar3Icon, XmarkIcon } from "@heroicons/react/24/solid";
 
 const navLinks = [
@@ -23,7 +24,7 @@ const Navbar = () => {
   const [NavBarOpen, SetNavBarOpen] = useState(false);
 
   return (
-    <nav className="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-10 tw-bg-[#121212] tw-bg-opacity-90">
+    <nav className="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-10 tw-bg-[#121212] tw-bg-opacity-10 0">
       <div className="tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-mx-auto tw-px-4 tw-py-2">
         <Link
           href={"/"}
@@ -62,6 +63,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      {NavBarOpen ? <MenuOverPlay links={navLinks} /> : null}
     </nav>
   );
 };
