@@ -32,7 +32,7 @@ const Navbar = () => {
           href={"/"}
           className="tw-relative tw-text-2xl md:tw-text-5xl tw-text-white tw-font-semibold"
         >
-          <Image src='/images/logo.png' alt='logo image' width={120} height={80} />
+          <Image src='/images/logo.png' alt='Logo image' width={128} height={94} />
         </Link>
         <div className="mobile-menu tw-block md:tw-hidden">
           {!NavBarOpen ? (
