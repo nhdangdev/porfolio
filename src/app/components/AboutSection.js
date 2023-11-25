@@ -21,7 +21,6 @@ const TAB_DATA = [
       </ul>
     ),
   },
-
   {
     title: "Education",
     id: "education",
@@ -81,28 +80,28 @@ const AboutSection = () => {
           </p>
           <div className="tw-flex tw-flex-row tw-justify-start tw-mt-8">
             <TabButton
-              onClick={() => handleTabChange("skills")}
+              selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
               Skills
             </TabButton>
 
             <TabButton
-              onClick={() => handleTabChange("education")}
+              selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               Education
             </TabButton>
 
             <TabButton
-              onClick={() => handleTabChange("experience")}
+              selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
             >
               Experience
             </TabButton>
 
             <TabButton
-              onClick={() => handleTabChange("certifications")}
+              selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               Certifications
