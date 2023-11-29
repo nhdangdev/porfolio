@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYears = new Date().getFullYear();
 
   return (
-    <footer className="tw-footer tw-border tw-border-t-[#33353F] tw-border-l-transparent tw-border-r-transparent">
+    <footer className="tw-footer tw-border tw-border-t-[#33353F] tw-border-l-transparent tw-border-r-transparent tw-z-10">
       <div className="tw-container tw-flex tw-justify-between tw-p-12 tw-text-white">
         <span>
           <Image

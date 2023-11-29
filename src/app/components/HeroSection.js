@@ -5,11 +5,11 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="lg:tw-py-16">
       <div className="tw-grid tw-grid-cols-1 sm:tw-grid-cols-12">
-        <div className="tw-col-span-7 tw-place-self-center tw-text-center sm:tw-text-left">
-          <h1 className="tw-text-white tw-mb-4 tw-text-4xl sm:tw-text-5xl lg:tw-text-6xl tw-font-extrabold">
-            <span className="tw-text-transparent tw-bg-clip-text tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-600">
+        <div className="tw-col-span-8 tw-place-self-center tw-text-center sm:tw-text-left tw-justify-self-start">
+          <h1 className="tw-text-white tw-mb-4 tw-text-4xl sm:tw-text-5xl lg:tw-text-8xl lg:tw-leading-normal tw-font-extrabold">
+            <span className="tw-text-transparent tw-bg-clip-text tw-bg-gradient-to-r tw-from-primary-400 tw-to-secondary-600">
               Hello, I'm
             </span>
             <br />
@@ -38,17 +38,17 @@ const HeroSection = () => {
             perferendis.
           </p>
           <div>
-            <button className="tw-w-full sm:tw-w-fit tw-px-6 tw-py-3 tw-rounded-full tw-mr-4 tw-bg-gradient-to-br tw-from-blue-500 tw-via-purple-500 tw-to-pink-500 hover:tw-bg-slate-200 tw-text-white">
+            <button className="tw-w-full sm:tw-w-fit tw-px-6 tw-py-3 tw-rounded-full tw-mr-4 tw-bg-gradient-to-br tw-from-blue-500 tw-via-primary-500 tw-to-secondary-500 hover:tw-bg-slate-200 tw-text-white">
               Hire Me
             </button>
-            <button className="tw-w-full sm:tw-w-fit tw-px-1 tw-py-1 tw-rounded-full tw-bg-gradient-to-br tw-from-blue-500 tw-via-purple-500 tw-to-pink-500 hover:tw-bg-slate-800 tw-text-white tw-mt-3">
-              <span className="tw-block tw-bg-[#121212] hover:tw-bg-slate-800 tw-rounded-full tw-px-5 tw-py-2">
+            <button className="tw-w-full sm:tw-w-fit tw-px-1 tw-py-1 tw-rounded-full tw-bg-gradient-to-br tw-from-blue-500 tw-via-primary-500 tw-to-secondary-500 hover:tw-bg-slate-800 tw-text-white tw-mt-3">
+              <a className="tw-block tw-bg-[#121212] hover:tw-bg-slate-800 tw-rounded-full tw-px-5 tw-py-2" href="./CV/CV_FRONTEND_ENG.pdf" target="_blank" rel="noopener noreferrer">
                 Download CV
-              </span>
+              </a>
             </button>
           </div>
         </div>
-        <div className="tw-col-span-5 tw-place-self-center tw-mt-4 lg:tw-mt-0">
+        <div className="tw-col-span-4 tw-place-self-center tw-mt-4 lg:tw-mt-0">
           <div className="tw-relative tw-rounded-full tw-bg-[#181818] tw-w-[250px] tw-h-[250px] lg:tw-w-[400px] lg:tw-h-[400px] ">
             <Image
               src="/images/hero-image-boy.jpg"

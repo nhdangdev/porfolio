@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectTag = ({ name, onClick, isSelected }) => {
   const buttonStyles = isSelected
-    ? "tw-text-white tw-border-purple-500 "
+    ? "tw-text-white tw-border-primary-500 "
     : "tw-text-[#ADB7BE] tw-border-slate-600 hover:tw-border-white";
 
   return (

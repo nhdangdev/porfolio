@@ -47,7 +47,7 @@ const EmailSection = () => {
 
   return (
     <section className="tw-grid md:tw-grid-cols-2 tw-relative tw-my-12 md:tw-my-12 tw-py-24 tw-gap-4">
-      <div className="tw-absolute tw-bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] tw-from-purple-900 tw-to-transparent tw-rounded-full tw-h-80 tw-w-80 tw-z-0 tw-blur-lg tw-top-3/4 -tw-left-4 tw-transform -tw-translate-x-1/2 -tw-translate-1/2"></div>
+      <div className="tw-absolute tw-bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] tw-from-primary-900 tw-to-transparent tw-rounded-full tw-h-80 tw-w-80 tw-z-0 tw-blur-lg tw-top-3/4 -tw-left-4 tw-transform -tw-translate-x-1/2 -tw-translate-1/2"></div>
       <div className="tw-z-10">
         <h5 className="tw-text-xl tw-font-bold tw-text-white tw-my-2">
           Let's Connect
@@ -116,7 +116,7 @@ const EmailSection = () => {
           </div>
           <button
             type="submit"
-            className="tw-bg-purple-500 hover:tw-bg-purple-600 tw-text-white tw-font-medium tw-py-2.5 tw-px-5 tw-rounded-lg tw-w-full"
+            className="tw-bg-primary-500 hover:tw-bg-primary-600 tw-text-white tw-font-medium tw-py-2.5 tw-px-5 tw-rounded-lg tw-w-full"
           >
             Send Message
           </button>
