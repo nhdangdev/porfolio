@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import AchievementsSection from "./components/AchievementsSection";
 import AboutSection from "./components/AboutSection";
-import ExperienceSection from "./components/ExperienceSection";
+// import ExperienceSection from "./components/ExperienceSection";
 import ProjectSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
@@ -13,8 +14,9 @@ export default function Home() {
       <Navbar />
       <div className="tw-container tw-mt-24 tw-mx-auto tw-px-12 tw-py-4">
         <HeroSection />
+        <AchievementsSection />
         <AboutSection />
-        <ExperienceSection />
+        {/* <ExperienceSection /> */}
         <ProjectSection />
         <EmailSection />
       </div>
