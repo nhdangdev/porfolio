@@ -4,8 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 import MenuOverPlay from "./MenuOverPlay";
-// import { Bar3Icon, XmarkIcon } from "@heroicons/react/24/solid";
-
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const navLinks = [
   {
@@ -32,7 +31,12 @@ const Navbar = () => {
           href={"/"}
           className="tw-relative tw-text-2xl md:tw-text-5xl tw-text-white tw-font-semibold"
         >
-          <Image src='/images/logo.png' alt='Logo image' width={120} height={80} />
+          <Image
+            src="/images/logo.png"
+            alt="Logo image"
+            width={120}
+            height={80}
+          />
         </Link>
         <div className="mobile-menu tw-block md:tw-hidden">
           {!NavBarOpen ? (
@@ -42,7 +46,7 @@ const Navbar = () => {
                 SetNavBarOpen(true);
               }}
             >
-              {/* <Bar3Icon classNam="tw-h-5 tw-w-5" /> */}
+              <Bars3Icon class="tw-h-5 tw-w-5 tw-text-white" />
             </button>
           ) : (
             <button
@@ -51,7 +55,7 @@ const Navbar = () => {
                 SetNavBarOpen(false);
               }}
             >
-              {/* <XmarkIcon classNam="tw-h-5 tw-w-5" /> */}
+              <XMarkIcon className="tw-h-5 tw-w-5 tw-text-white" />
             </button>
           )}
         </div>
